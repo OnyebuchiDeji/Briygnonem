@@ -1,0 +1,45 @@
+
+:root
+{
+    /* Global Variables */
+    --sectionAnchorCol: grey;
+    --sectionAnchorColHover: darkslategray;
+
+    --mainHeaderCol: black;
+    --mainHeaderBGCol: darkgray;
+
+    --textColor1: rgb(32, 0, 64);
+
+}
+
+section a
+{
+    color: gray;
+
+}
+
+section a:hover
+{
+    color: black;
+}
+
+#main_header
+{
+    display: block;
+    width: 100%;
+
+    text-align: center;
+    /* To Center the Text Along the Y-axis */
+    padding: 24px 0px 48px 0px;
+    margin: 0px;
+
+    font: bold Georgia;
+    font-size: 5em;
+    text-transform: none;
+    text-decoration: solid;
+    background-color: var(--mainHeaderBGCol);
+    color: var(--mainHeaderCol);
+    
+}
+
+

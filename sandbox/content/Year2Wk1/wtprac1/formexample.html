@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Form_Example</title>
+        <header id="main_header">This is My Form</header>
+        <link rel="stylesheet" href="main.css" type="text/css" />
+        <p class="paragraph_scheme">
+            To go back to the index page:
+            <a href="index.html">click here :/</a>
+        </p>
+    </head>
+
+    <body>
+        <form action="formexample.html" method="get">
+            <fieldset>
+                <legend>Student Data</legend>
+                <!--These are input boxes made with labels and text fields-->
+                <label for="user_name">Username:</label>
+                <input type="text" id="user_name" name="user_name"><br><br>
+                <label for="password">Password:</label>
+                <input type="text" id="password" name="password"><br><br>
+                
+                <!--Drop-down list
+                Leave undergrad or postgrad and years for this-->
+                <label for="study_level">What Level of Study Are You?</label>
+
+                <select name="study_level" id="study_level">
+                    <option value="undergraduate">Undergraduate</option>
+                    <option value="postgraduate">Postgraduate</option>
+                    <option value="Masters">Masters</option>
+                </select>
+
+                <!--Radio Button-->
+                
+                <p>Are you International?</p>
+                <label for="Yes">Yes</label>
+                <input type="radio" id="Yes" name="Yes">
+                <label for="Yes">No</label>
+                <input type="radio" id="No" name="No">
+                <br><br>
+
+                <!--Check Box-->
+                <label for="male">Male</label>
+                <input type="checkbox" id="male" name="gender">
+                <label for="female">Female</label>
+                <input type="checkbox" id="female" name="gender">
+
+                <!--Text Area-->
+                <textarea
+                name="Description" rows="10" cols="30">
+                </textarea>
+
+                <!--Submit and Reset Button-->
+                <input type="submit" value="Submit">
+                
+                <input type="reset" value="Reset">
+        </fieldset>
+        </form>
+    </body>
+</html>

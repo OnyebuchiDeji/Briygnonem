@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: 'Your Font';
+    src: url('your-font.woff2') format('woff2');
+    /* Swap: fallback font displays immediately until custom font loads 
+    completely */
+    font-display: swap;
+    /* The browser waits for a short period for the custom font to load
+        If it doesn't, fallback is displayed*/
+    font-display: block;
+    /* Like `swap` but has a longer block period before falling back */
+    font-display: fallback;
+    /* gives browser liberty to decide on best option based on user preferences
+    and network conditions */
+    font-display: optional;
+}
+
+*
+{
+    box-sizing:border-box;
+}
+
+/*--------------Global Variables------------- */
+
+:root
+{
+
+    /* TopNavbar Website Logo */
+    --topNavbarWebsiteLogoColor: whitesmoke;
+    --topNavbarWebsiteLogoColorHover: darkgrey;
+
+    /* TopNavbar Toggle Button Color */
+    --topNavbarToggleButtonColor: gainsboro;
+
+    /*  TopNavbar Theme Icon Color*/
+    --themeButtonIconColor: grey;
+    
+    /* Navigation Bars */
+
+    /* Top Navbar */
+    --topNavbarBGColor: rgb(12, 12, 12);
+    --topNavbarBorderColor: silver;
+    --topNavbarAnchorCol: gainsboro;
+    --topNavbarAnchorColHover: darkgrey;
+    --topNavbarAnchorBGColHover: var(--text_color1b);
+    
+    /* Bottom NavbarBar */
+    --bottomNavbarBGColor: rgb(18, 18, 18);
+    --bottomNavbarBorderColor: gray;
+    --bottomNavbarAnchorCol: silver;
+    --bottomNavbarAnchorColHover: whitesmoke;
+    --bottomNavbarAnchorBGColHover: none;
+
+    /* Side Bar */
+    --sideNavbarBGColor: rgb(25, 25, 25);
+    --sideNavbarBorderColor: darkgrey;
+    --sideNavbarAnchorCol: rgb(198, 202, 206);
+    --sideNavbarAnchorColHover: antiquewhite;
+    --sideNavbarAnchorBGColHover: rgb(70, 70, 70);
+    
+    --borderColor1: #e5e7eb;
+    --borderColor2: #ddd;
+
+    --fontWeightParagraph: 400;
+    --fontWeightSubheading: 500;
+
+}
+
+.DefaultTheme
+{
+    --bgOpacity: 1;
+
+    --bgColorMain-light: rgb(229 231 235 / var(--bgOpacity));
+    --bgColorRel1-light: rgb(244 244 245 / var(--bgOpacity));
+    --bgColorRel2-light: rgb(212 220 216 / var(--bgOpacity));
+    --fontColor1-light: black;
+    --fontColor2-light: #111;
+    --borderColor1-light: #e5e7eb;
+    --borderColor2-light: #ddd;
+    --themeButtonIconBGColor-light: lavender;
+    --iconBorder-light: lightgray;
+
+    --bgColorMain-dark: rgb(25 28 30 / var(--bgOpacity));
+    --bgColorRel1-dark: rgb(35 37 39 / var(--bgOpacity));
+    --bgColorRel2-dark: rgb(34 36 38 / var(--bgOpacity));
+    --fontColor1-dark: whitesmoke;
+    --fontColor2-dark: gainsboro;
+    --borderColor1-dark: #232333;
+    --borderColor2-dark: #232323;
+    --themeButtonIconBGColor-dark: beige;
+    --iconBorder-dark: ivory;
+}
+
+.LightBG
+{
+    --bg-opacity: var(--bgOpacity);
+    --bgColorMain: var(--bgColorMain-light);
+    --bgColorRel1: var(--bgColorRel1-light);
+    --bgColorRel2: var(--bgColorRel2-light);
+    --fontColor1: var(--fontColor1-light);
+    --fontColor2: var(--fontColor2-light);
+    --borderColor1: var(--borderColor1-light);
+    --borderColor2: var(--borderColor2-light);
+    --themeButtonIconBGColor: var(--themeButtonIconBGColor-light);
+    --iconBorder: var(--iconBorder-light);
+}
+
+.DarkBG
+{
+    --bg-opacity: 1;
+    --bgColorMain: var(--bgColorMain-dark);
+    --bgColorRel1: var(--bgColorRel1-dark);
+    --bgColorRel2: var(--bgColorRel2-dark);
+    --fontColor1: var(--fontColor1-dark);
+    --fontColor2: var(--fontColor2-dark);
+    --borderColor1: var(--borderColor1-dark);
+    --borderColor2: var(--borderColor2-dark);
+    --themeButtonIconBGColor: var(--themeButtonIconBGColor-dark);
+    --iconBorder: var(--iconBorder-dark);
+}
+
+body
+{
+    margin: 0px; padding: 0px;
+    /* background-color: rgb(45, 45, 45); */
+    z-index: -100;
+    overflow-x:hidden;
+    overflow-y: scroll;
+}
+
+body::-webkit-scrollbar
+{
+    display: none;
+    width: none;
+}
+
+p
+{
+    font-weight: var(--fontWeightParagraph);
+}
+
+h3
+{
+    font-weight: var(--fontWeightSubheading);
+}
+
+
+a
+{
+    color: grey;
+    text-decoration: none;
+}
+
+
+a:hover
+{
+    color: white;
+    text-shadow: 2px 2px 8px black;
+}
+
+.PageTitle
+{
+    text-align: center;
+}
+
+
+div#ContentGrid
+{
+    margin: 0px; padding: 0px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    /* border: 3px solid yellow; */
+    /* gap: 0.5%; */
+    min-height: 75svh;
+    /* overflow-y: scroll; */
+}
+
+div#ContentGrid.Closed
+{
+    margin: 0px; padding: 0px;
+    display: grid;
+    grid-template-columns: 0% 100%;
+}
+
+#MainContentHTML
+{
+    margin: 0%;
+    padding: 0.2%;
+    background-color: var(--bgColorMain);
+    color: var(--fontColor1);
+    max-height: 75svh;
+    overflow-y: scroll;
+    /* height: 100svh; */
+}
+
+#MainContentHTML::-webkit-scrollbar
+{
+    display: none;
+    width: none;
+}
+
+#MainContentHTML h1, #MainContentHTML h2, #MainContentHTML h3
+{
+    margin: 1.5%;
+}
+
+#MainContentHTML section
+{
+    margin: 1.5%;
+}
+
+#MainContentHTML p
+{
+    margin: 1.5%;
+}
+

@@ -1,0 +1,105 @@
+/* :root
+{
+    --navbarBGColor: rgb(12, 12, 12);
+    --navFontColor1: silver;
+    --navFontColor2: gainsboro;
+    --navFontColor3: whitesmoke;
+    --navFontColor4: darkgrey;
+} */
+
+
+.NavbarItems
+{
+    list-style:none;
+    overflow:hidden;
+}
+
+
+/* ______________________Bottom Bar____________________________*/
+#BottomNavbarHTML
+{
+    margin: 0px;
+    padding: 2.5%;
+
+    background-color: var(--bottomNavbarBGColor);
+    color: var(--bottomNavbarAnchorCol);
+
+    width: 100%;
+    /* border: 3px solid yellow; */
+
+}
+
+#BottomNavbarHTML div#BottomNavbarContent
+{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    
+    /* border: 5px solid purple; */
+    
+    text-align: center;
+    font-size: large;
+    margin: auto;
+    padding: auto;
+    /* padding: 5%; */
+    width: 100%;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+#BottomNavbarHTML #BottomNavbarContent :nth-child(n)
+{
+    /* border: 5px solid green; */
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+
+}
+#BottomNavbarHTML #BottomNavbarContent a
+{
+    color: var(--bottomNavbarAnchorCol);
+    text-decoration: none;
+
+    margin: 10px 20px;
+}
+#BottomNavbarHTML #BottomNavbarContent a:hover
+{
+    color: var(--bottomNavbarAnchorColHover);
+    text-decoration: overline;
+}
+
+#BottomNavbarHTML #BottomNavbarContent .NavbarItems
+{
+    /* border: 2px solid yellow; */
+    display: flex;
+    flex-direction: row;
+}
+
+/* #BottomNavbarHTML #BottomNavbarContent .NavbarItems a
+{
+
+} */
+/* #BottomNavbarHTML #BottomNavbarContent .navbar-items a:hover
+{
+    color: var(--bottomNavbarAnchorColHover);
+} */
+
+#BottomNavbarHTML #BottomNavbarContent #SocialMediaLinks
+{
+    /* border: 3px solid red; */
+    display: flex;
+    flex-direction: row;
+}
+
+/* #BottomNavbarHTML #BottomNavbarContent #SocialMediaLinks a
+{
+    
+}
+#BottomNavbarHTML #BottomNavbarContent #SocialMediaLinks a:hover
+{
+
+} */
+
+/* #BottomNavbarHTML #BottomNavbarContent #CopyrightInfo
+{
+    
+} */

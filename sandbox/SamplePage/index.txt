@@ -1,0 +1,23 @@
+Welcome to my Homepage
+
+Homepage Heading
+
+Home | About
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a diam sed neque elementum aliquet sed ac massa. Ut lacinia mauris sit amet lorem cursus molestie. Nunc eu velit quis quam luctus commodo eget sed mauris. Etiam mollis tincidunt pellentesque. Quisque feugiat condimentum mi, ac rutrum tellus varius at.
+
+Cras erat leo, venenatis sed suscipit sit amet, lobortis ut dui. Sed condimentum, nulla quis pharetra placerat, magna nisi convallis turpis, a dignissim ipsum nibh at nisl. Proin facilisis laoreet fermentum. Mauris rutrum, turpis sed tristique iaculis, leo dolor lobortis ligula, in facilisis massa tellus a diam.
+
+Subheading
+
+This text is strong. This text is emphasised.
+
+Link to the Keele Homepage.
+
+Image of an Amstrad CPC464
+
+The following is a list:
+Bullet 1
+Bullet 2
+
+Footer

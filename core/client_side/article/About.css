@@ -1,0 +1,40 @@
+
+:root
+{
+    --mainHeaderCol: azure;
+    --mainHeaderBGCol: rgb(27, 27, 27);
+}
+
+
+#main_header
+{
+    display: block;
+    width: 100%;
+    height: auto;
+
+    /* To Center the Text Along the Y-axis */
+    padding: 24px 0px 24px 0px;
+    
+    /*
+        The Margin became an issue. It seems that the children of the parent inherit the
+        margin proerties too
+    */
+    margin: 0px;
+    border: 2px red solid;
+    
+    text-align: center;
+
+    font: bold Georgia;
+    font-size: 5em;
+    text-transform: none;
+    text-decoration: solid;
+    background-color: var(--mainHeaderBGCol);
+    color: var(--mainHeaderCol);
+    
+    /* As can see, justify content is for things like flexboxes, especially other containers inside the flexbox...
+    not for text.
+    
+    justify-content: center;
+    */
+    
+}

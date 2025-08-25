@@ -1,0 +1,92 @@
+<!DOCTYPE HTML><html lang="en">
+  <title>Weather App Task</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="dailyweatherdata.js"></script>
+  <script src="weatherforecast.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"
+    integrity="sha512-Wt1bJGtlnMtGP0dqNFH1xlkLBNpEodaiQ8ZN5JLA5wpc1sUlk/O5uuOMNgvzddzkpvZ9GLyYNa8w2s7rqiTk5Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <head>
+    <title>Rendering Weather Data</title>
+    <!-- <link rel="stylesheet" type="text/css" href="../../main/Home.css"> -->
+    <link rel="stylesheet" type="text/css" href="Weather_Task.css">
+    <style>
+    
+      canvas {
+        width: 1000px !important;
+        height: 400px !important;
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <h1 id="main_header">Rendering Weather Data</h1>
+
+    <article>
+      <button id="temperatureChartStoke" onclick="changeToBar(this); changeColor(this, 'red')" >Change Graph Type</button>
+      <label class="lon_stoke"></label>
+      <label class="lat_stoke"></label>
+      <br>
+      <canvas id="TemperatureChartStoke"></canvas>
+      <br><br><br>
+
+      <button id="temperatureChartLondon" onclick="changeToBar(this); changeColor(this, 'rebeccapurple')" >Change Graph Type</button>
+      <label class="lon_london"></label>
+      <label class="lat_london"></label>
+      <br>
+      <canvas id="TemperatureChartLondon"></canvas>
+      <br><br><br>
+
+      <button id="windChartStoke" onclick="changeToBar(this); changeColor(this, 'violet')" >Change Graph Type</button>
+      <label class="lon_stoke"></label>
+      <label class="lat_stoke"></label>
+      <br>
+      <canvas id="WindChartStoke"></canvas>
+      <br><br><br>
+
+      <button id="windChartLondon" onclick="changeToBar(this); changeColor(this, 'salmon')">Change Graph Type</button>
+      <label class="lon_london"></label>
+      <label class="lat_london"></label>
+      <br>
+      <canvas id="WindChartLondon"></canvas>
+      <br><br><br>
+
+      <button id="humidityChartStoke" onclick="changeToBar(this); changeColor(this, 'olive')" >Change Graph Type</button>
+      <label class="lon_stoke"></label>
+      <label class="lat_stoke"></label>
+      <br>
+      <canvas id="HumidityChartStoke"></canvas>
+      <br><br><br>
+
+      <button id="humidityChartLondon" onclick="changeToBar(this); changeColor(this, 'sienna')" >Change Graph Type</button>
+      <label class="lon_london"></label>
+      <label class="lat_london"></label>
+      <br>
+      <canvas id="HumidityChartLondon"></canvas>
+      <br><br><br>
+    </article>
+
+
+    <nav id="footerbar">
+      <a href="../../main/Home.html">Home</a>
+      <a href="../../main/About.html">About</a>
+      <a href="../../main/Project_Tasks.html">Project Tasks</a>
+      <p>
+          <strong>Email:</strong> x7e30@students.keele.ac.uk|
+          <a href="https://www.linkedin.com/in/ebenezer-ayo-metibemu-93392626b">
+              LinkedIn
+          </a>
+      </p>
+      <p>
+          @2023 Deji Projects. All rights reserved.
+          Website built using HTML, CSS, JS, PHP.
+      </p>
+
+    </body>
+    
+    <script src="Weather_Task2.js"></script>
+
+</html>

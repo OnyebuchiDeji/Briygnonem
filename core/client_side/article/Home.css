@@ -1,0 +1,261 @@
+
+
+
+/* CONTAINER OBJECTS */
+
+
+article
+{
+    display: block;
+    width: 100%;
+    /* max-width: 100%; */
+    height: auto;
+    max-height: 100%;
+
+    position: relative;
+    /* To Make Space for the Header Nav Bar */
+    top: 75px;
+    margin: 0px;
+    /* margin: 0px 0px 78px 0px; */
+    align-items: center;
+    
+    background-color: var(--articleBGColor);
+
+    /* border: 3px red solid; */
+
+}
+
+
+section
+{
+    display: block;
+    width: clamp(300px, 50%, 960px);
+    height: 140%;
+    /* border: 1px var(--background_color2a) solid; */
+    /* border: 2px blue solid; */
+    background-color: var(--sectionBGColor1);
+    text-align: left;
+    padding: 5%;
+    margin: 20px 5px 30px 5px;
+    font-size: x-large;
+}
+
+section#section1 p
+{
+    display: inline-block;
+    
+}
+
+section h1#icon
+{
+    display: inline;
+    /* position: relative; */
+    /* float: right; */
+    /* top: 15px; */
+    /* left: 140%; */
+    /* width: 100px; */
+    font-style: Sans-serif;
+    /* font-size: clamp(1.5em, 2.5vw, 4em); */
+    font-size: 4em;
+    text-align: center;
+    /* border: 2px red solid; */
+}
+
+section h2#first_heading
+{
+    display:inline;
+
+    font: bold Verbeda;
+    color:rgb(32, 0, 96);
+    font-size: 1.7em;
+    text-decoration: none;
+
+
+    /* border: 2px purple solid; */
+}
+
+section h1, section h2
+{
+    font: bold Georgia;
+    color:rgb(32, 0, 64);
+    font-size: 1.5em;
+
+    /* border: 2px palevioletred solid; */
+}
+
+
+section p
+{
+    font: bold Arial;
+    font-size: 1em;
+    color: black;
+}
+
+nav
+{
+    display: block;
+    width: 100%;
+}
+
+nav ul
+{
+    list-style-type: none;
+}
+
+nav#headerbar
+{
+    /* display: flex; */
+    position: fixed;
+    width: calc(100% - 15px);
+    height: calc(10% - 15px);
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    padding: 15px;
+
+    /* 
+    align-content: center;
+    justify-content: center; */
+    
+    /* text-align: center; */
+    background-color: var(--headerNavBarBGColor);
+    color: gainsboro;
+    
+    /* border-width: 2px;
+    border-style: solid;
+    border-color: var(--headerNavBarBorderColor); */
+    z-index: 100;
+}
+
+nav#headerbar ul div#navlinks
+{
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: repeat(3, 1fr); */
+
+    position: absolute;
+    top: 25%;
+    left: 70%;
+    right: 0px;
+}
+
+nav#headerbar ul li a
+{
+    display: inline-block;
+    max-width: 75px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+    text-decoration: none;
+    color: var(--headerNavBarAnchorCol);
+    text-align: center;
+
+}
+
+
+/* nav#headerbar ul li a#first_icon
+{
+
+    position: absolute;
+    left: 70%;
+    right: 0px;
+
+}
+nav#headerbar ul li a#second_icon
+{
+
+    position: absolute;
+    left: 75%;
+    right: 0px;
+
+}
+nav#headerbar ul li a#third_icon
+{
+
+    position: absolute;
+    left: 80%;
+    right: 0px;
+
+} */
+
+
+
+
+#headerbar a:hover
+{
+    background-color: var(--text_color1b);
+    border-radius: 15px;
+    color: var(--headerNavBarAnchorColHover);
+}
+
+nav#headerbar a#header_icon
+{
+    display: inline-block;
+    width: auto;
+    max-width: calc(35%);
+    height: calc(auto - 10px);
+
+    /* float: left; */
+    position: absolute;
+    padding: 0px;
+    top: 2.5%;
+    left: 0.5%;
+    right: 0px;
+
+
+    font: Sans-Serif;
+    font-size: larger;
+    font-style:oblique;
+    text-transform: uppercase;
+    color: var(--headerIconCol);
+
+    /* border: 2px red solid; */
+}
+
+nav#headerbar a#header_icon:hover
+{
+    /* To ensure the background color on hover does not change with rest of links */
+    background-color: var(--headerNavBarBGColor);
+    /* border-radius: 0px;
+    border-style: none; */
+    color: var(--headerIconColHover);
+}
+
+
+nav#footerbar
+{
+    width: calc(100%);
+    height: calc(50% - 30px);
+
+    position: relative;
+    left: 0px;
+    top: 75px;
+    /* bottom: 0px;*/
+
+    padding: 15px 0px 15px 0px;
+    /* margin: 15px 0px 0px 0px; */
+
+    text-align: center;
+    /* justify-content: center; */
+    background-color: var(--footerNavBarBGColor);
+    color: white;
+/*     
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--footerNavBarBorderColor); */
+    z-index: 90;
+}
+
+#footerbar a
+{
+    padding-left: 15px;
+    padding-right: 15px;
+    color: var(--footerNavBarAnchorCol);
+    text-decoration: none;
+}
+
+#footerbar a:hover
+{
+    color: var(--footerNavBarAnchorColHover);
+    text-decoration: overline;
+}

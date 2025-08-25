@@ -1,0 +1,197 @@
+y
+
+.NavbarItems
+{
+    list-style:none;
+    overflow:hidden;
+}
+
+#TopNavbarHTML
+{
+    padding: 1.2%;
+    margin: 0px;
+    width: 100%;
+
+    background-color: var(--topNavbarBGColor);
+    color: var(--topNavbarAnchorCol);
+    /* border: 3px solid pink; */
+    height: 30%;
+}
+
+
+
+#TopNavbarHTML #TopNavbarContent
+{
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid yellow; */
+    justify-content: space-between;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+#TopNavbarHTML #TopNavbarContent div
+{
+    /* border: 3px solid red; */
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    
+    width: 35%;
+}
+
+#TopNavbarHTML #TopNavbarContent a
+{
+    cursor: pointer;
+}
+
+/*  When class *resized* is defined */
+#TopNavbarHTML #TopNavbarContent.resized
+{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+/*  When class *resized* is defined */
+#TopNavbarHTML #TopNavbarContent.resized div
+{
+    width: 100%;
+}
+
+#TopNavbarHTML #TopNavbarContent div
+{
+    font-size: 2rem;
+}
+
+#TopNavbarHTML #TopNavbarContent div :nth-child(n)
+{
+    margin: auto 10px;
+}
+#TopNavbarHTML #TopNavbarContent div a#WebsiteLogo
+{
+    color: var(--topNavbarWebsiteLogoColor);
+    transition: 0.5s;
+}
+
+#TopNavbarHTML #TopNavbarContent div a#WebsiteLogo:hover
+{
+    color: var(--topNavbarWebsiteLogoColorHover)
+}
+
+#TopNavbarHTML #TopNavbarContent div #TopNavbarToggleButton
+{
+    border: none;
+    background-color: var(--topNavbarBGColor);
+    color: var(--topNavbarToggleButtonColor);
+    /* width: 55%; */
+    /* align-items: center; */
+    cursor: pointer;
+}
+#TopNavbarHTML #TopNavbarContent div #TopNavbarToggleButton svg
+{
+    /* width: 100%; */
+    padding: auto;
+}
+
+#TopNavbarHTML #TopNavbarContent div button.hidden
+{
+    visibility: hidden;
+}
+
+#TopNavbarHTML #TopNavbarContent nav
+{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    margin: auto 10px;
+}
+
+#TopNavbarHTML #TopNavbarContent nav :nth-child(n)
+{
+    margin: auto 5px;
+}
+
+/* When class *resized* is defined*/
+#TopNavbarHTML div#TopNavbarContent.resized nav
+{
+    /* border: 2px solid blue; */
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* align-content: center; */
+    /* text-align: center; */
+    /* align-items: center; */
+}
+#TopNavbarHTML #TopNavbarContent.resized nav :nth-child(n)
+{
+    /* border: 3px solid green; */
+    /* border: 2px solid green; */
+
+    /* margin: 10px; */
+    margin: 0px;
+    /* padding: 0px; */
+    /* align-self: center; */
+    padding: 0.15% 2.5%;
+}
+
+#TopNavbarHTML #TopNavbarContent nav a
+{
+    color: var(--topNavbarAnchorCol);
+    background-color: var(--topNavbarBGColor);
+    
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+#TopNavbarHTML #TopNavbarContent nav a:hover
+{
+    color: var(--topNavbarAnchorColHover);
+    /* border: 4px solid var(--iconBorder); */
+    /* background-color: var(--iconColor); */
+    text-decoration: overline;
+    /* text-shadow: 2px 2px 8px black; */
+}
+
+
+
+#TopNavbarHTML #TopNavbarContent nav #ThemeButton
+{
+    background-color: var(--topNavbarBGColor);
+    color: var(--themeButtonIconColor);
+    /* border: 2px solid red; */
+
+    /* BOTH WORK! */
+
+    /* SOL 1 */
+    /* display: flex; */
+    /* align-items: center; */
+
+    /* SOL 2 */
+    display: grid;
+    place-items: center;
+    padding: 0px;
+    margin: 0px;
+
+    
+}
+
+#TopNavbarHTML #TopNavbarContent nav #ThemeButton svg
+{
+    /* SOL 1 */
+    /* margin: 0px auto; */
+
+    /* SOL 2 */
+    margin: 0;
+    padding: 0px;
+}
+
+#TopNavbarHTML #TopNavbarContent nav #ThemeButton:hover
+{
+    /* border: 4px solid var(--iconBorder); */
+    background-color: var(--themeButtonIconBGColor);
+}
+
+
+/* ################################################### */

@@ -1,0 +1,142 @@
+
+body{
+    font: bold Arial;
+    font-size: medium;
+    font-style: normal;
+    text-decoration: none;
+    color:beige;
+    background-color: rgb(14, 72, 83);
+}
+
+#main_header
+{
+    font: bold Georgia;
+    font-size:xx-large;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: underline;
+    color: beige;
+    text-align: center;
+    /* color: rgb(116, 20, 211); */
+    /* rebeccapurple */
+}
+
+.header_scheme
+{
+    font: bold Georgia;
+    font-size: x-large;
+    font-style: normal;
+    text-decoration: underline;
+    color: beige;
+    /* blue violet */
+}
+
+.paragraph_scheme
+{
+    font: normal Sans-serif;
+    font-size: large;
+    font-style: normal;
+    text-decoration:none;
+    color: beige;
+}
+
+.caption
+{
+    font: bold Helvetixa;
+    font-size: medium;
+    font-style: italic;
+    text-decoration: solid;
+    color: tomato;
+}
+
+a{
+    font-style: normal;
+    color: rgb(31, 170, 13);
+    text-decoration: none;
+}
+
+a:hover
+{
+    text-decoration: overline;
+    color: lawngreen;
+    font-weight: bold;
+}
+
+#table_link
+{
+    font-style: normal;
+    color: purple;
+    text-decoration: none;
+}
+
+#table_link:hover
+{
+    text-decoration: overline;
+    color: blueviolet;
+    font-weight: bold;
+}
+
+
+#main_border
+{
+    float: left;
+    width: 500px;
+    height:fit-content;
+    background: rgb(14, 72, 83);
+    margin: 50px 50px 50px 50px;
+    padding: 25px 25px 25px 25px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: blanchedalmond;
+}
+
+
+#table_header_scheme
+{
+    font: bold Georgia;
+    font-size: x-large;
+    font-style: normal;
+    text-decoration: solid;
+    color: indigo;
+}
+
+.table_data_scheme
+{
+    font: normal Sans-serif;
+    font-size: large;
+    font-style: normal;
+    text-decoration:solid;
+    color: black;
+}
+
+/* table, th, td
+{
+    border: 1px solid beige;
+    border-collapse: collapse;
+    border-radius: 10px;
+
+} */
+
+/* table
+{
+    /* border: 1px solid beige; */
+    /*border: width style colour
+    border-width: 5px;
+    border-style:solid;
+    border-collapse: collapse;
+    border-radius: 10px;
+    background-color: blanchedalmond;
+    border-color:beige;
+} */
+
+th, td
+{
+    /* border: 1px solid beige; */
+    /*border: width style colour*/
+    border-width: 5px;
+    border-style:solid;
+    border-collapse: collapse;
+    border-radius: 10px;
+    background-color: beige;
+    border-color:black;
+}
